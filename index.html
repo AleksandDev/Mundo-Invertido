@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Invertido</title>
+    <link rel="shortcut icon" href="./assets/images/banners/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/styless.css">
 </head>
 <body>
     <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
-      <audio id="music" autoplay>
-        <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
+      <audio id="music" autoplay loop>
+        <source src="./assets/sounds/assets_musics_normal-world.mpeg" aria-details="Audio do site" autoplay loop/>
       </audio>
       <div class="header-content">
         <img class="invert-element" src="./assets/images/banners/logo.svg" alt="Imagem principal Mundo Invertido." />
@@ -116,7 +117,7 @@
               <label for="character">Personagem</label>
               <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
             
-              <button type="button" id="btnSubscribe">Me inscrever</button>
+              <button type="button" id="btnSubscribe" onclick="errorButton()">Me inscrever</button>
             </form>
             
           </div>
